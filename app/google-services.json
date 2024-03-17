@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "266340919622",
+    "project_id": "dialybook",
+    "storage_bucket": "dialybook.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266340919622:android:a766365dc0af4b9f2d9d47",
+        "android_client_info": {
+          "package_name": "com.example.dialybook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266340919622-lv1kcdi4sbou9br6sehjig2tu657bvum.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN70hxbUukaxkYb7nnzHbqDmzmB8pames"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266340919622-lv1kcdi4sbou9br6sehjig2tu657bvum.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sell_billitems"
+    android:windowSoftInputMode="adjustNothing">
+
+    <ListView
+        android:id="@+id/purchase_list"
+        android:layout_width="396dp"
+        android:layout_height="403dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_vertical"
+        android:text="TOTAL -"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
+
+    <TextView
+        android:id="@+id/payementmethod"
+        android:layout_width="359dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="SELECT PAYEMENT METHOD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <TextView
+        android:id="@+id/customer_name"
+        android:layout_width="271dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:hint="CUSTOMER NAME"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <EditText
+        android:id="@+id/total_cost"
+        android:layout_width="153dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:hint="$ COST"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+
+
+    <Button
+        android:id="@+id/but_cancelbill"
+        android:layout_width="178dp"
+        android:layout_height="47dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/red"
+        android:text="CANCEL BILL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956" />
+
+    <Button
+        android:id="@+id/but_billdone"
+        android:layout_width="178dp"
+        android:layout_height="47dp"
+        android:backgroundTint="@color/green"
+        android:text="DONE"
+        android:textColor="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956" />
+
+    <Button
+        android:id="@+id/but_billadditem"
+        android:layout_width="136dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttuon_"
+        android:text="ADD ITEM"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+
+    <RadioGroup
+        android:id="@+id/Radio_payement"
+        android:layout_width="344dp"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874"
+        tools:ignore="MissingConstraints">
+
+
+        <RadioButton
+            android:id="@+id/radio_cashmethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CASH PAYEMENT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.813"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.887" />
+
+        <RadioButton
+            android:id="@+id/radio_onlinemethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ONLINE PAYEMENT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.152"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.887" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

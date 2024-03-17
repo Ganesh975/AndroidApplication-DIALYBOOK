@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product_list">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="129dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001">
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="229dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="4dp"
+            android:gravity="left"
+            android:text="PRODUCT NAME"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.156" />
+
+        <TextView
+            android:id="@+id/seller_name"
+            android:layout_width="164dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="244dp"
+            android:gravity="center"
+            android:text="SELLER NAME"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.155" />
+
+        <TextView
+            android:id="@+id/tottsales"
+            android:layout_width="173dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="236dp"
+            android:gravity="left"
+            android:text="TOTAL BILL - "
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="217dp"
+            android:layout_height="26dp"
+            android:gravity="left"
+            android:text="DATE AND TIME"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.02"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.844" />
+
+        <TextView
+            android:id="@+id/payement_method"
+            android:layout_width="172dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:text="PAYEMENT METHOD"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.966"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.847" />
+
+        <TextView
+            android:id="@+id/total_bill"
+            android:layout_width="138dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="center"
+            android:text="$ COST"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
